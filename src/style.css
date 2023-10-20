@@ -1,0 +1,130 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color:  wheat;
+     position: absolute;
+         top: 50%;
+             left: 50%;
+                 transform: translateY(-50%) translateX(-50%)
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+.actionbtn {
+  background-color: blue;
+  border: none;
+  color: white;
+  border-radius: 10px;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: flex;
+  font-size: 16px;
+  cursor: pointer;
+  margin: 0 auto;
+  flex-direction: column;
+}
+.actionbtn:hover {
+  background-color: antiquewhite;
+  font-weight: 600;
+}
+.people {
+  border: none;
+  color: cornflowerblue;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 500%;
+  cursor: pointer;
+  margin: 0 auto;
+}
+
+.counter-container {
+  display: flexbox;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+input {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  max-width: 200px;
+  width: 100%;
+  margin: 10px 0;
+  background-color: antiquewhite;
+}
+
+.form-container {
+  max-width: 600px;
+  padding: 25px;
+  width: 100%;
+  margin: 0 auto;
+  background-color: bisque;
+}
+button {
+  max-width: 100px;
+  width: 100%;
+  background-color: coral;
+  border-radius: 10px;
+    ;
+}
+
+.handle{
+  display: flex;
+  justify-content: space-around;
+ gap: 15%;
+ height: 100%;
+}
+.submit{
+  background-color: cornflowerblue;
+}
+.form{
+  padding-top: 10%;
+}
+
+.loader {
+  position: relative;
+  
+  
+  border: 16px solid #f3f3f3; /* Light grey */
+  border-top: 16px solid #3498db; /* Blue */
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.hide-loader{
+display:none;
+}
+
+.center {
+  animation: fadeIn ease 3s;
+}
+
+@keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
